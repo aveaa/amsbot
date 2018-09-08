@@ -1,7 +1,7 @@
 exports.info = {description: 'Голосование', required: 'SEND_MESSAGES'}
 exports.run = async (client, msg, args) => {
   var embed = new client.RichEmbed()
-    .setTitle('Голосование')
+    .setTitle('Голосование ' + msg.author.name + '# ' + msg.author.discriminator)
     .setDescription(args.join(' '))
     .setColor('RANDOM')
     .setFooter('Sahara ')
