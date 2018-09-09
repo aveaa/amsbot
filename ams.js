@@ -1,6 +1,11 @@
 var Discord = require('discord.js')
 var client = new Discord.Client()
 
+var emojis = {
+  zapret: '488237552545955840',
+  razreshenie: '488238174401986560'
+}
+
 require('events').EventEmitter.prototype._maxListeners = 100
 client.p = '#'
 client.sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
