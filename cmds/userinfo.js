@@ -9,6 +9,6 @@ exports.run = async (client, msg, args) => {
     .addField('Айди последнего сообщения', u.lastMessageID)
     .addField('Тип аккаунта', u.bot ? 'Бот' : 'Юзер')
     .setImage(u.avatarURL)
-    .setFooter('AMS')
+    .setFooter('Sahara')
   msg.channel.send({embed})
 }
