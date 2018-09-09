@@ -1,6 +1,7 @@
 exports.info = {description: 'Голосование', required: 'SEND_MESSAGES'}
 exports.run = async (client, msg, args) => {
   var embed = new client.RichEmbed()
+    .setAuthor{ name: msg.author.nickname, icon_URL: msg.author.avatar.URL }
     .setTitle('Голосование')
     .setDescription(args.join(' '))
     .setColor('RANDOM')
