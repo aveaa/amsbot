@@ -4,7 +4,7 @@ exports.run = async (client, msg, args) => {
     .setTitle('Голосование')
     .setDescription(args.join(' '))
     .setColor('RANDOM')
-    .setFooter('Sahara | ' + msg.author + '#' + msg.author.discriminator)
+    .setFooter('Sahara | ' + msg.author.name + '#' + msg.author.discriminator)
   var m = await (msg.guild.channels.find('name', '🔔║votes')).send({embed})
   await m.react('✅')
   await m.react('❌')
