@@ -2,7 +2,7 @@ exports.info = {description: 'Показать пинг бота', required: 'SE
 exports.run = (client, msg, args) => {
   var embed = new client.RichEmbed()
     .setTitle('Пинг')
-    .setDescription(`Пинг: ${Math.round(client.ping)}ms`)    
+    .setDescription(client.emojis.get(emojis.razreshenie) + ` Пинг: ${Math.round(client.ping)}ms`)    
     .setColor('FFFFFF')
   msg.channel.send({embed})
 }
