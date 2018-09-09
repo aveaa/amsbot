@@ -5,7 +5,6 @@ exports.run = (client, msg, args) => {
   razreshenie: '488238174401986560'
 }
   
-  var razreshenie = client.emojis.get(emojis.razreshenie);
   var embed = new client.RichEmbed()
     .setTitle('Пинг')
     .setDescription('${razreshenie} Пинг: ${Math.round(client.ping)}ms')    
